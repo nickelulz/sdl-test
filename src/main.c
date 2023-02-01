@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#define clamp(min, v, y) v > y ? y : (v < min ? min : v)
+#define clamp(min, v, max) v > max ? max : (v < min ? min : v)
 
 // constants
 const uint16_t WINDOW_WIDTH  = 1200;
